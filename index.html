@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Masai Doctor Records</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>HOSPITAL - DOCTOR RECORDS</h1>
+    <!-- Use this form for data input  -->
+    <div id="content">
+    <form>
+      <h4>Doctor Name</h4>
+      <input placeholder="Name" type="text" id="name" />
+      <h4>Doctor ID</h4>
+      <input placeholder="Doctor ID" type="text" id="doctor_id" />
+      <h4>Specialization</h4>
+      <select id="Specialization">
+        <option value="">Select Specialization</option>
+        <option value="Dermatologist">Dermatologist</option>
+        <option value="Dentist">Dentist</option>
+        <option value="Gynecologist">Gynecologist</option>
+      </select>
+      <h4>Experience</h4>
+      <input placeholder="Experience" type="number" id="experience" />
+      <h4>Email Address</h4>
+      <input placeholder="Email" type="email" id="email" />
+      <h4>Mobile Number</h4>
+      <input placeholder="Mobile No." type="number" id="mobile" />
+      <input  id="submit" type="submit" value="Submit" />
+    </form>
+
+    <!-- Use this Select tag for filter part  -->
+    <!-- <select id="filter">
+      <option value="">Select Specialization</option>
+      <option value="Dermatologist">Dermatologist</option>
+      <option value="Dentist">Dentist</option>
+      <option value="Gynecologist">Gynecologist</option>
+    </select> -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Doctor ID</th>
+          <th>Specialization</th>
+          <th>Experience in Years</th>
+          <th>Email</th>
+          <th>Mobile No</th>
+          <th>Role</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Append Rows here using JS & DOM  -->
+      </tbody>
+    </table>
+  </div>
+  </body>
+  
+  <script src="script.js">
+  </script>
+</html>
