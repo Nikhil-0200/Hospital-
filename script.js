@@ -87,7 +87,7 @@ function renderTable() {
         let td5 = document.createElement('td');
         let td6 = document.createElement('td');
         let td7 = document.createElement('td');
-        let deleteBtn = document.createElement('button'); // Create delete button
+        let deleteBtn = document.createElement('button');
 
         td1.innerText = ele.input1;
         td2.innerText = ele.input2;
@@ -96,11 +96,11 @@ function renderTable() {
         td5.innerText = ele.input5;
         td6.innerText = ele.input6;
         td7.innerText = ele.input7;
-        deleteBtn.innerText = "Delete"; // Set button text
+        deleteBtn.innerText = "Delete"; 
 
-        deleteBtn.addEventListener('click', () => deleteRow(index)); // Attach click event
+        deleteBtn.addEventListener('click', () => deleteRow(index)); 
 
-        row.append(td1, td2, td3, td4, td5, td6, td7, deleteBtn); // Add delete button to row
+        row.append(td1, td2, td3, td4, td5, td6, td7, deleteBtn);
         tbody.append(row);
     });
 }
